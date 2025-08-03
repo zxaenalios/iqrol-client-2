@@ -202,7 +202,7 @@ export const Header: React.FC = () => {
         }}
       >
         <Col xs={0} sm={8} md={12}>
-          <AutoComplete
+          {/* <AutoComplete
             style={{
               width: "100%",
               maxWidth: "550px",
@@ -217,11 +217,11 @@ export const Header: React.FC = () => {
               suffix={<div className={styles.inputSuffix}>/</div>}
               prefix={<SearchOutlined className={styles.inputPrefix} />}
             />
-          </AutoComplete>
+          </AutoComplete> */}
         </Col>
         <Col>
           <Space size={screens.md ? 32 : 16} align="center">
-            <Dropdown
+            {/* <Dropdown
               menu={{
                 items: menuItems,
                 selectedKeys: currentLocale ? [currentLocale] : [],
@@ -235,7 +235,7 @@ export const Header: React.FC = () => {
                   <DownOutlined className={styles.languageSwitchIcon} />
                 </Space>
               </Button>
-            </Dropdown>
+            </Dropdown> */}
 
             <Button
               className={styles.themeSwitch}

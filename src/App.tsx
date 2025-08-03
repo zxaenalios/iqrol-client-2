@@ -234,8 +234,8 @@ const App: React.FC = () => {
                       type="login"
                       formProps={{
                         initialValues: {
-                          email: "demo@refine.dev",
-                          password: "demodemo",
+                          email: "admin@gmail.com",
+                          password: "password",
                         },
                       }}
                     />
@@ -248,8 +248,8 @@ const App: React.FC = () => {
                       type="register"
                       formProps={{
                         initialValues: {
-                          email: "demo@refine.dev",
-                          password: "demodemo",
+                          email: "admin@gmail.com",
+                          password: "password",
                         },
                       }}
                     />

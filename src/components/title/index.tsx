@@ -1,5 +1,7 @@
 import { useLink } from "@refinedev/core";
-import { Space, theme } from "antd";
+import { Space, theme, Typography } from "antd";
+
+const { Text, Link } = Typography;
 
 import { FinefoodsLogoIcon, FinefoodsLogoText } from "../../components";
 import { Logo } from "./styled";
@@ -16,22 +18,26 @@ export const Title: React.FC<TitleProps> = ({ collapsed }) => {
     <Logo>
       <Link to="/">
         {collapsed ? (
-          <FinefoodsLogoIcon />
+          // <FinefoodsLogoIcon />
+          <img src="images/iqrol-logo.png" alt='logo' width="50" height="50"/>
         ) : (
           <Space size={12}>
-            <FinefoodsLogoIcon
+            <img src="images/iqrol-logo.png" alt='logo' width="50" height="50"/>
+            {/* <Text type="warning">IQRO'L</Text> */}
+            {/* <FinefoodsLogoIcon
               style={{
                 fontSize: "32px",
                 color: token.colorTextHeading,
               }}
-            />
-            <FinefoodsLogoText
+            /> */}
+            {/* <FinefoodsLogoText
               style={{
                 color: token.colorTextHeading,
                 width: "100%",
                 height: "auto",
               }}
-            />
+            /> */}
+
           </Space>
         )}
       </Link>
